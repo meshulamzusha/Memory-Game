@@ -24,3 +24,13 @@ def shuffle_table(table: list[list]) -> list[list]:
         random.shuffle(row)
 
     return table
+
+
+def create_player_table(size: int) -> list[list]:
+    """creates and returns a table thet will be update every turn and displayed for user"""
+    user_table = []
+    for i in range(size):
+        row = ['*'] * size
+        user_table.append(row)
+
+    return user_table
