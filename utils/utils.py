@@ -14,3 +14,11 @@ def create_cards_table(size: int) -> list[list]:
         table.append(row)
 
     return table
+
+
+def shuffle_table(table: list[list], iterations: int) -> list[list]:
+    random.shuffle(table)
+    for row in table:
+        random.shuffle(row)
+
+    return table
