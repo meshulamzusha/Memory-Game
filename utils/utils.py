@@ -18,6 +18,7 @@ def create_cards_table(size: int) -> list[list]:
 
 
 def shuffle_table(table: list[list], iterations: int) -> list[list]:
+    """Shuffle the game table and return it"""
     random.shuffle(table)
     for row in table:
         random.shuffle(row)
