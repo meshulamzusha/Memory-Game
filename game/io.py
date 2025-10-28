@@ -1,3 +1,5 @@
+from utils import utils
+
 def start_game_message() -> None:
     """prints a message for game starting"""
     print("Welcome to the memory game.\n"
