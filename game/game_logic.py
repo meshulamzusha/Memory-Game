@@ -18,3 +18,7 @@ def is_flipped(table: list[list], position_1: tuple[int, int], position_2: tuple
     j2 = position_2[1]
 
     return table[i1][j1] != '*' and table[i2][j2] != '*'
+
+
+def update_player_table(game_table: list[list], display_table: list[list], position_1: tuple[int, int], position_2: tuple[int, int]) -> None:
+    
