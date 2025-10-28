@@ -9,3 +9,9 @@ def get_table_size() -> int:
     """gets the size of game table size"""
     size = int(input())
     return size
+
+
+def display_table(table: list[[]]) -> None:
+    """prints a table in a user-friendly way"""
+    for row in table:
+        print(' '.join(map(str,row)))
