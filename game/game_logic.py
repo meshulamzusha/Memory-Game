@@ -1,3 +1,8 @@
+import os
+import time
+from game import io
+
+
 def is_matching(table: list[list], position_1: tuple[int, int], position_2: tuple[int, int]) -> bool:
     """Return True if the value in the positions in the table are the same, else False"""
     i1 = position_1[0]
