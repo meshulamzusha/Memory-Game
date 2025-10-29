@@ -8,7 +8,7 @@ def convert_input_type(user_input: str) -> tuple[int, int]:
 
 def create_cards_table(size: int) -> list[list]:
     """create a list of lists with elements for game cards represents the game table"""
-    elements = [i for i in range(size // 2) for _ in range(2)]
+    elements = [i for i in range(size * 2) for _ in range(2)]
     table = []
 
     for i in range(size):
